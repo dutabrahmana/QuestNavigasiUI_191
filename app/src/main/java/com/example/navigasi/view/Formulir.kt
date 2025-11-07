@@ -18,3 +18,11 @@ fun FormIsian(
                     Text(
                         stringResource(id = R.string.home),
                         color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    colorResource(id = R.color.teal_700)
+                )
+            )
+        }
+

@@ -17,4 +17,14 @@ enum class Navigation {
     Detail
 }
 
-}
+@Composable
+fun DataApp(
+    navController: NavHostController = rememberNavController(),
+    modifier: Modifier = Modifier
+) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigation.FormulirKu.name,
+            modifier = Modifier.padding(paddingValues = isiRuang)
+        ) {

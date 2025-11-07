@@ -30,3 +30,7 @@ fun FormIsian(
             modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            OutlinedTextField(
+                value = "",
+                singleLine = true,

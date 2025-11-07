@@ -35,3 +35,14 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigation.Detail.name) {
+                TampilData(
+                    onBackBtnClick = {
+                        cancelAndBackToFormulirKu(navController)
+                    }
+                )
+            }
+        }
+    }
+}
+
